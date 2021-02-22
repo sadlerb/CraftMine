@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "LWJGL3+Assets/lwjgl-2.9.1/jar/lwjgl.jar",
+        "LWJGL3+Assets/lwjgl-2.9.1/jar/lwjgl_util.jar",
+        "LWJGL3+Assets/lwjgl-2.9.1/jar/PNGDecoder.jar",
+        "LWJGL3+Assets/lwjgl-2.9.1/jar/slick-util.jar"
+    ]
+
+    
+}
