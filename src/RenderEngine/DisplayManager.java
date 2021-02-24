@@ -3,6 +3,9 @@ package src.RenderEngine;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.PixelFormat;
+
+import src.CraftMine.MainGame;
+
 import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
@@ -24,7 +27,7 @@ public class DisplayManager{
             Display.setFullscreen(true);
             GL11.glViewport(0, 0, Display.getWidth(),Display.getHeight());
         } catch (LWJGLException e) {
-            //TODO: handle exception
+            
         }
         
 
@@ -49,6 +52,7 @@ public class DisplayManager{
     }
 
     public static void closeDisplay(){
+        MainGame.loader1.cleanUp();
         Display.destroy();
         System.exit(0);
     }
