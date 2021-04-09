@@ -12,7 +12,7 @@ public class EntityRenderer {
 
         GL30.glBindVertexArray(model.getvaoID());
         GL20.glEnableVertexAttribArray(0);
-        GL11.glDrawArrays(GL11.GL_TRIANGLES, 0, model.getvertexCount());
+        GL11.glDrawElements(GL11.GL_TRIANGLES, model.getvertexCount(),GL11.GL_UNSIGNED_INT,0);
         GL30.glBindVertexArray(0);
     }
 }
